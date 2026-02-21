@@ -1,0 +1,240 @@
+/* Reset basics */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f6f1e7; /* cream */
+    color: #1f2937;
+}
+
+/* Header */
+header {
+  background-color: #071020;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  position: relative; 
+}
+
+.logo {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: left;
+}
+
+.logo img {
+  height: 150px; 
+  width: auto;
+  display: block;
+}
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Navigation */
+nav {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0f1b2d;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #c9a227; /* gold */
+}
+
+/* Main content */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Sections */
+section {
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+button {
+    background-color: #c9a227; /* gold */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin-right: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #a8841f; 
+}
+
+
+.testimonials .card {
+    background-color: #f6f1e7; 
+    border-left: 5px solid #c9a227; /* Gold accent */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.testimonials .card-text {
+    font-style: italic;
+}
+
+
+.service-section {
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.12);
+}
+
+.service-section:last-child {
+  border-bottom: none;
+}
+
+.service-section h3 {
+  margin-bottom: 12px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #c9a227;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;   /* removes underline */
+    font-size: 14px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #a8841f;
+    color: white;          
+}
+
+.about-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  border: 4px solid #c9a227;  
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+
+
+/* --- Mobile + responsive --- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+nav {
+  line-height: 1.8;
+  text-align: center;
+}
+
+nav a {
+  display: inline-block;
+  margin: 6px 10px; 
+}
+
+
+@media (max-width: 768px) {
+  header {
+    padding: 24px 16px;
+    text-align: center;
+  }
+
+      .btn-primary {
+        display: block;
+        margin: 30px auto 0 auto;
+        text-align: center;
+        width: fit-content;
+    }
+
+  .logo {
+    position: static;
+    transform: none;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  section {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .h1, h2, h3 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .logo img {
+    height: 90px;
+    margin: 0 auto;
+  }
+
+  header h1 {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+
+  main {
+    margin: 24px auto;
+    padding: 0 16px;
+  }
+
+  .about-image {
+  display: flex;
+  justify-content: center;   /* horizontal center */
+  align-items: center;       /* vertical center (if needed) */
+  margin-top: 20px;
+}
+}
+
+
+@media (max-width: 480px) {
+  button {
+    width: 100%;
+    margin: 10px 0 0 0; 
+    padding: 14px 18px;
+    font-size: 16px; 
+  }
+}
+
+
+@media (max-width: 768px) {
+  .testimonials .card {
+    padding: 1rem;
+  }
+
+  .service-section {
+    padding: 18px 0;
+  }
+}
+
