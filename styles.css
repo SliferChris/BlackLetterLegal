@@ -23,7 +23,7 @@ header {
 .logo img {
   height: clamp(110px, 12vw, 190px); 
   max-height: 190px;      
-  width: auto;
+  width: 300px;
   margin: 0 auto;
   display: block;
 }
