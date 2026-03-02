@@ -8,24 +8,24 @@ body {
 
 /* Header */
 header {
-  background-color: #071020;
+  background-color: #071020; 
   color: white;
   padding: 40px 20px;
   text-align: center;
-  position: relative; 
 }
 
 .logo {
-  position: absolute;
-  left: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  text-align: left;
+  position: static;        
+  transform: none;
+  text-align: center;
+  margin: 0 auto 16px auto; 
 }
 
 .logo img {
-  height: 150px; 
+  height: clamp
+  max-height: 190px;               
   width: auto;
+  margin: 0 auto;
   display: block;
 }
 header h1 {
