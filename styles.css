@@ -20,10 +20,9 @@ header {
   text-align: center;
   margin: 0 auto 16px auto; 
 }
-
 .logo img {
-  height: clamp
-  max-height: 190px;               
+  height: clamp(110px, 12vw, 190px); 
+  max-height: 190px;      
   width: auto;
   margin: 0 auto;
   display: block;
